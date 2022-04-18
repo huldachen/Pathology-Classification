@@ -30,6 +30,15 @@ Refer to requirements.txt for the full list. The installation of these packages 
 3. Train a Model
 4. (Optional) Post-train Patch Aggregation Model for MIL
 5. Evaluate the Model
+To evaluate the model or optionally generate prediction heatmap, call
+'''
+[mpirun ...] python -m whole_slide_cnn.test --config YOUR_TRAIN_CONFIG.YAML
+'''
+
+This command generate a JSON file in the result directory named 'test_result.json' by default. The file contains the model predictions for each testing slide.
+
+
+
 
 
 Data Availability
